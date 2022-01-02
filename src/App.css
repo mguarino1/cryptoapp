@@ -1,0 +1,74 @@
+.App {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    overflow-y: scroll;
+}
+
+.Table {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 750px;
+    background-color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.TokenCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.TokenSymbol {
+    grid-column: 1 / 1;
+}
+
+.TokenPrice {
+    grid-column: 3 / 3;
+}
+
+.NavBar {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    border-bottom: 1px solid black;
+}
+
+.buttons {
+    grid-column: 1 / 1;
+    display: flex;
+    align-items: center;
+}
+
+.buttons p {
+    margin-right: 10px;
+}
+
+.buttons button {
+    height: 40px;
+    width: 30px;
+}
+
+.NavBar input {
+    grid-column: 2 / 2;
+    border: none;
+    font-size: 20px;
+}
+
+.NavBar input:focus {
+    outline: none;
+}
+
+.NavBar select {
+    grid-column: 3 / 3;
+}
